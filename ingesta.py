@@ -2,13 +2,13 @@ import boto3
 import mysql.connector
 import csv
 
-# ---- Configuración MySQL (reemplazar con tus datos reales) ----
-DB_HOST = "IP_PRIVADA_DE_TU_MV_BASES_DE_DATOS"   # ej: 172.31.92.214
-DB_PORT = 3306                                    # o el puerto que hayas mapeado (ej. 8005)
+# ---- Configuración MySQL ----
+DB_HOST = "172.31.93.85"
+DB_PORT = 8005
 DB_USER = "root"
-DB_PASSWORD = "utec"          # el password que usaste al levantar el contenedor mysql_c
-DB_NAME = "nombre_bd"         # nombre de tu base de datos
-TABLE_NAME = "nombre_tabla"   # tabla a exportar
+DB_PASSWORD = "utec"          # si tu password real es distinto, reemplázalo aquí
+DB_NAME = "bd_api_employees"
+TABLE_NAME = "employees"
 
 # ---- Configuración S3 ----
 ficheroUpload = "data.csv"
